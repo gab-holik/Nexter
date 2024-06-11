@@ -9,6 +9,9 @@
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 2rem;
   align-items: center;
+   @media only screen and (max-width: $bp-small) {
+    gap: 1rem;
+  }
 
   &__link:visited,
   &__link:link {
@@ -35,4 +38,9 @@
   text-align: center;
   width: 70%;
   margin: 6rem auto 0;
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 4rem auto 0;
+    width: 80%;
+  }
 }
